@@ -51,8 +51,22 @@ A Spring Boot application that provides a REST API for managing and executing sh
 - Name: Sugash S M
 
 ### 4. API Testing
-![API Test](screenshots/api.png)
-- Shows successful API response
+# Create a new task
+```
+$task = @{
+    name = "Test Task"
+    owner = "Sugash"
+    command = "echo Hello World"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "http://localhost/api/tasks" -Method Post -ContentType "application/json" -Body $task
+
+# List all tasks
+Invoke-RestMethod -Uri "http://localhost/api/tasks" -Method Get
+```
+![image](https://github.com/user-attachments/assets/256d8610-9186-46f4-9598-0a28a1a95071)
+
+Shows successful API response
 - Date: 28-02-2024
 - Name: Sugash S M
 
