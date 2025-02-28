@@ -32,23 +32,18 @@ A Spring Boot application that provides a REST API for managing and executing sh
 ![image](https://github.com/user-attachments/assets/14ed6ab7-efcf-4c50-a452-91c34ea7b992)
 
 - Shows both MongoDB and TaskManager pods running
-- Date: 28-02-2024
-- Name: Sugash S M
+
 
 ### 2. Services Configuration
 ![image](https://github.com/user-attachments/assets/4078d708-4214-42d7-a75e-098bd01e79f1)
 
 - Shows MongoDB and TaskManager services
 - LoadBalancer configuration
-- Date: 28-02-2024
-- Name: Sugash S M
 
 ### 3. Persistent Volume
 ![image](https://github.com/user-attachments/assets/70ea6644-31ef-4145-91b8-0d29c004299f)
 
 - Shows MongoDB PVC status
-- Date: 28-02-2024
-- Name: Sugash S M
 
 ### 4. API Testing
 # Create a new task
@@ -64,11 +59,11 @@ Invoke-RestMethod -Uri "http://localhost/api/tasks" -Method Post -ContentType "a
 # List all tasks
 Invoke-RestMethod -Uri "http://localhost/api/tasks" -Method Get
 ```
+![image](https://github.com/user-attachments/assets/8fc0bad5-a650-4647-9967-d6ae405c7d5a)
+
 ![image](https://github.com/user-attachments/assets/256d8610-9186-46f4-9598-0a28a1a95071)
 
 Shows successful API response
-- Date: 28-02-2024
-- Name: Sugash S M
 
 ## Project Structure
 ```
@@ -97,5 +92,4 @@ kubernetes-task-manager/
 ```
 
 ## Author
-- Name: Sugash S M
-- Date: 28-02-2024
+Sugash Srimari R
